@@ -1,8 +1,12 @@
-function App() {
-  
+import React from 'react';
+import UploadImage from './UploadImage';
 
-  return;
+function App() {
+    return (
+        <div className="App">
+            <UploadImage />
+        </div>
+    );
 }
 
 export default App;
-
