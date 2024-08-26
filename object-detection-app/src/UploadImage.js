@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './MainPage.css'
 
 const UploadImage = () => {
     const [selectedFile, setSelectedFile] = useState(null);
@@ -38,7 +39,10 @@ const UploadImage = () => {
     };
 
     return (
-        <div>
+        <div><nav className='top-nav-bar'>
+            <button className='first-model-button' onClick={handleUpload}>First Model</button>
+            <button className='second-model-button' onClick={handleUpload}>Second Model</button>
+        </nav>
             <h1>Upload an Image</h1>
             <input type="file" onChange={handleFileChange} />
             <button onClick={handleUpload}>Upload and Detect Objects</button>
