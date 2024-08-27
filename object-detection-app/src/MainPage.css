@@ -26,3 +26,13 @@
 .first-model-button:hover, .second-model-button:hover {
     background-color: #400068;
 }
+
+.nav-bar-title {
+    font-size: 1.5rem;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap
+
+}
