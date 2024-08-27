@@ -8,6 +8,11 @@ const UploadImage = () => {
 
     const handleFileChange = (event) => {
         setSelectedFile(event.target.files[0]);
+        return (
+            <div>
+                <image src={selectedFile} alt='image'></image>
+            </div>
+            );
     };
 
     const handleUpload = async () => {
@@ -35,8 +40,10 @@ const UploadImage = () => {
             } catch (error) {
                 console.error("There was an error!", error);
             }
-        };
+        }
     };
+    
+    
 
     return (
         <div>
