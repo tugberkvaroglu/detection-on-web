@@ -39,11 +39,7 @@ const UploadImage = () => {
     };
 
     return (
-        <div><nav className='top-nav-bar'>
-            <button className='first-model-button' onClick={handleUpload}>First Model</button>
-            <button className='second-model-button' onClick={handleUpload}>Second Model</button>
-        </nav>
-            <h1>Upload an Image</h1>
+        <div>
             <input type="file" onChange={handleFileChange} />
             <button onClick={handleUpload}>Upload and Detect Objects</button>
             {result && <div>
