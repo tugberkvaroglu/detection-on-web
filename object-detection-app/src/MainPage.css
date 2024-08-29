@@ -52,6 +52,10 @@
     margin: 4px 10px;
 }
 
+.image-select:hover, .image-upload:hover {
+    background-color: #400068;
+}
+
 .image-div, .json-div {
     display: inline-block;
     border: 1px solid red;
