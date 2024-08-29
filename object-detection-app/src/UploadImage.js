@@ -80,13 +80,13 @@ const UploadImage = () => {
             <button className='image-upload' onClick={handleUpload}>Upload and Detect Objects</button>
             <div className='upload-and-image'>
                 <div className='image-div'>
-                {selectedFile && <img ref={imageRef} src={URL.createObjectURL(selectedFile)} alt="Selected" style={{ display: 'none' }} />}
-                <canvas ref={canvasRef}></canvas>
-            </div>
-            {result && <div className='json-div'>
-                <h2>Detection Result:</h2>
-                <pre>{JSON.stringify(result, null, 2)}</pre>
-            </div>}
+                    {selectedFile && <img ref={imageRef} src={URL.createObjectURL(selectedFile)} alt="Selected" style={{ display: 'none' }} />}
+                    <canvas ref={canvasRef}></canvas>
+                </div>
+                {result && <div className='json-div'>
+                    <h2>Detection Result:</h2>
+                    <pre>{JSON.stringify(result, null, 2)}</pre>
+                </div>}
             </div>
         </div>
     );
