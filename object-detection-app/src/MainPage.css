@@ -36,3 +36,34 @@
     white-space: nowrap
 
 }
+
+.image-select, .image-upload {
+    background-color: #530186; /* Green */
+    border: #000000;
+    color: white;
+    padding: 15px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 15px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 4px 10px;
+}
+
+.image-div, .json-div {
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin: 5px 10px;
+    vertical-align: middle;
+}
+
+.upload-and-image {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
