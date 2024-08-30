@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import './MainPage.css';
 
-const UploadImage = () => {
+const UploadImage = ({ apiUrl }) => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [result, setResult] = useState(null);
     const canvasRef = useRef(null);
@@ -24,7 +24,7 @@ const UploadImage = () => {
             try {
                 const response = await axios({
                     method: 'POST',
-                    url: 'https://detect.roboflow.com/hard-hat-sample-s1amk/3',
+                    url: apiUrl,
                     params: {
                         api_key: 'FijZbvnCkL57glv5WoXl'
                     },
