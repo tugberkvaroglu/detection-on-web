@@ -26,7 +26,7 @@ const UploadImage = ({ apiUrl }) => {
                     method: 'POST',
                     url: apiUrl,
                     params: {
-                        api_key: 'FijZbvnCkL57glv5WoXl'
+                        api_key: 'XXX'
                     },
                     data: base64Image,
                     headers: {
